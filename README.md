@@ -70,3 +70,12 @@ docker push username/repository:tag
 ```bash
 docker run -p 4000:80 username/repository:tag
 ```
+
+## Remove containers and images
+```bash
+docker container rm <hash>
+docker container rm $(docker container ls -a -q)         # Remove all containers
+
+docker image rm <image id>            # Remove specified image from this machine
+docker image rm $(docker image ls -a -q)   # Remove all images from this machine
+```
