@@ -40,3 +40,33 @@ docker build --tag=friendlyhello .
 ```bash
 docker run -p 4000:80 friendlyhello
 ```
+
+## To stop an Image
+```bash
+docker container stop CONTAINER_ID
+```
+
+
+# SHARING YOUR IMAGE IN DOCKERHUB
+
+## To Login into docker hub
+```bash
+docker login
+```
+
+## Tag the image
+```bash
+docker tag image username/repository:tag
+e.g.
+docker tag friendlyhello kaperskyguru/get-started:v2
+```
+
+## Publish the image
+```bash
+docker push username/repository:tag
+```
+
+## Pull and run the image from the remote repository
+```bash
+docker run -p 4000:80 username/repository:tag
+```
