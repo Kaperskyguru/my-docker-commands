@@ -5,14 +5,14 @@ Curated list of my popular docker commands
 ```bash 
 docker
 docker container --help
-``
+```
 
 ## Display Docker version and info
 ```bash
 docker --version
 docker version
 docker info
-``
+```
 
 ## Execute Docker image
 ```bash
