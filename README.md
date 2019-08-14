@@ -30,3 +30,13 @@ docker container ls
 docker container ls --all
 docker container ls -aq
 ```
+
+## Build an Image
+```bash
+docker build --tag=friendlyhello .
+```
+
+## Running the Image
+```bash
+docker run -p 4000:80 friendlyhello
+```
